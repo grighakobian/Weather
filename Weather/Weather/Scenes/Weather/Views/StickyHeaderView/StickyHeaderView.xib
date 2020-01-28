@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -149,7 +147,7 @@
                 <constraint firstItem="jNi-b6-Cxj" firstAttribute="leading" secondItem="5Gv-BT-Pp7" secondAttribute="trailing" constant="15" id="kfo-wm-8Vm"/>
                 <constraint firstItem="1PC-Jn-Nq8" firstAttribute="centerX" secondItem="tzg-Rm-bCY" secondAttribute="centerX" id="lKT-NG-ZTf"/>
                 <constraint firstItem="q1p-s9-2gy" firstAttribute="leading" secondItem="kCg-AS-T2n" secondAttribute="leading" id="mZP-S1-6fg"/>
-                <constraint firstItem="7Oz-cC-NKF" firstAttribute="top" secondItem="tzg-Rm-bCY" secondAttribute="top" priority="250" id="rZb-d9-OsU"/>
+                <constraint firstItem="7Oz-cC-NKF" firstAttribute="top" secondItem="kCg-AS-T2n" secondAttribute="top" priority="250" id="rZb-d9-OsU"/>
                 <constraint firstItem="jNi-b6-Cxj" firstAttribute="centerY" secondItem="Nta-Bh-3AR" secondAttribute="centerY" id="t3w-EB-v6N"/>
                 <constraint firstItem="5Gv-BT-Pp7" firstAttribute="centerY" secondItem="jNi-b6-Cxj" secondAttribute="centerY" id="twE-JK-s9J"/>
                 <constraint firstAttribute="trailing" secondItem="f9w-0h-bE8" secondAttribute="trailing" id="u56-Pm-Rgb"/>
