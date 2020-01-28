@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Weather
+
+  Created by Grigor Hakobyan on 4/21/19.
+  Copyright © 2019 Grigor Hakobyan. All rights reserved.
+*/
+
+
+"weather.search-hint" = "Enter city name";
+"alert.title.location-service-disabled" = "Location Services Disabled";
+"alert.message.location-service-disabled" = "Allow us to access location services to provide location based weather data";
+"alert.ok-action-title" = "OK";
+"alert.settings-action-title" = "Settings";
+"weather.description" = "Today: %@ currently. It's %.f°; The high today was forecast as %.f°";
+"HUMMIDITY" = "HUMMIDITY";
+"PRESSURE" = "PRESSURE";
+"CHANCE OF RAIN" = "CHANCE OF RAIN";
+"CHANCE OF SNOW" = "CHANCE OF SNOW";
+"WIND" = "WIND";
+"TODAY" = "TODAY";
+

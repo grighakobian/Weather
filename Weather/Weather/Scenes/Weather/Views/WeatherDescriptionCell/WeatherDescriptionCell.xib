@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="bhG-f9-TfU" customClass="WeatherDescriptionCell" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bhG-f9-TfU" id="eOn-rZ-WRr">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBj-BA-cc0" userLabel="TopSeparator">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="W62-sJ-Zge"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today: Clear currently. It’s 6; The high today was forecast as 15" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc4-Xh-vAv">
+                        <rect key="frame" x="20" y="12" width="335" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-XH-9gP" userLabel="BottomSeparator">
+                        <rect key="frame" x="0.0" y="71" width="375" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="rXR-NM-m2k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WBj-BA-cc0" secondAttribute="trailing" id="Hbo-N0-eD3"/>
+                    <constraint firstItem="WBj-BA-cc0" firstAttribute="top" secondItem="eOn-rZ-WRr" secondAttribute="top" id="LMf-hB-r3i"/>
+                    <constraint firstItem="WBj-BA-cc0" firstAttribute="leading" secondItem="eOn-rZ-WRr" secondAttribute="leading" id="LWL-Cd-B5m"/>
+                    <constraint firstItem="Zc4-Xh-vAv" firstAttribute="top" secondItem="eOn-rZ-WRr" secondAttribute="top" constant="12" id="LiL-x3-loD"/>
+                    <constraint firstItem="CVV-XH-9gP" firstAttribute="leading" secondItem="eOn-rZ-WRr" secondAttribute="leading" id="Nka-CN-soh"/>
+                    <constraint firstItem="Zc4-Xh-vAv" firstAttribute="leading" secondItem="eOn-rZ-WRr" secondAttribute="leading" constant="20" id="RaU-Gc-Wdl"/>
+                    <constraint firstAttribute="trailing" secondItem="Zc4-Xh-vAv" secondAttribute="trailing" constant="20" id="d97-qe-9R5"/>
+                    <constraint firstAttribute="bottom" secondItem="CVV-XH-9gP" secondAttribute="bottom" id="eDn-Zk-tWG"/>
+                    <constraint firstAttribute="trailing" secondItem="CVV-XH-9gP" secondAttribute="trailing" id="eOc-2s-yDh"/>
+                    <constraint firstItem="CVV-XH-9gP" firstAttribute="top" secondItem="Zc4-Xh-vAv" secondAttribute="bottom" constant="12" id="hy4-Xy-n6z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="ibDescriptionLabel" destination="Zc4-Xh-vAv" id="0HA-1d-XtW"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+</document>
