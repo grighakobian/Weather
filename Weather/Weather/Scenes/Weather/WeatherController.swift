@@ -67,10 +67,10 @@ public final class WeatherController: UITableViewController {
         super.viewDidAppear(animated)
         
         // Workaround
-        if (navigationController?.navigationBar.alpha == 0) {
+//        if (navigationController?.navigationBar.alpha == 0) {
             navigationController?.setNavigationBarHidden(true, animated: false)
-            navigationController?.navigationBar.alpha = 1
-        }
+//            navigationController?.navigationBar.alpha = 1
+//        }
     }
     
     // MARK: - Methods
@@ -118,7 +118,7 @@ public final class WeatherController: UITableViewController {
     private func initStickyHeaderView() {
         stickyHeaderView = StickyHeaderView.fromNib()
         stickyHeaderView.ibSearchButton.rx.tap
-            .bind { self.recomeSearchControllerActive() }
+            .bind { self.becomeSearchControllerActive() }
             .disposed(by: disposeBag)
     }
     
@@ -134,7 +134,7 @@ public final class WeatherController: UITableViewController {
         searchController.searchBar.resignFirstResponder()
     }
     
-    private func recomeSearchControllerActive() {
+    private func becomeSearchControllerActive() {
         navigationController?.setNavigationBarHidden(false, animated: true)
         searchController.searchBar.becomeFirstResponder()
     }
@@ -311,7 +311,6 @@ public final class WeatherController: UITableViewController {
     
     private func configureNavigationBar() {
         let navigationBar = navigationController!.navigationBar
-        navigationBar.alpha = 0
         navigationBar.barStyle = .black
         navigationBar.titleTextAttributes = [
             .font: UIFont.systemFont(ofSize: 14),

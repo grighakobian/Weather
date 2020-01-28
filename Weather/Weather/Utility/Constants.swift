@@ -11,7 +11,7 @@ import QuartzCore
 
 enum Constants {
     static let weatherProviderURL = URL(string: "https://openweathermap.org/")!
-    static let stickyHeaderHeightCoefficient: CGFloat = 384/667
+    static let stickyHeaderHeightCoefficient: CGFloat = 0.547
     static let stickyHeaderHeight: CGFloat = 384
     static let stickyHeaderMinHeight: CGFloat = 250
 }

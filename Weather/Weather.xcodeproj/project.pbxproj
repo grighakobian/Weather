@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		032F6418226D6199005B3537 /* HourlyWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032F6416226D6199005B3537 /* HourlyWeatherCell.xib */; };
 		032F641D226DAEF3005B3537 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F641C226DAEF3005B3537 /* WeatherController.swift */; };
 		032F6423226DB350005B3537 /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032F6422226DB350005B3537 /* ResultsCell.swift */; };
+		0334DB0D23E02F1100EE0A13 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0342056E2269EABB0088A818 /* Domain.framework */; };
 		034205342269E9310088A818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034205332269E9310088A818 /* AppDelegate.swift */; };
 		0342053B2269E9340088A818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0342053A2269E9340088A818 /* Assets.xcassets */; };
 		0342053E2269E9340088A818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0342053C2269E9340088A818 /* LaunchScreen.storyboard */; };
@@ -80,6 +81,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0334DB0B23E02F0D00EE0A13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034205282269E9310088A818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0342056D2269EABB0088A818;
+			remoteInfo = Domain;
+		};
 		034205452269E9340088A818 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 034205282269E9310088A818 /* Project object */;
@@ -145,8 +153,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				034205C72269ED440088A818 /* NetworkPlatform.framework in Embed Frameworks */,
 				034205842269EABB0088A818 /* Domain.framework in Embed Frameworks */,
+				034205C72269ED440088A818 /* NetworkPlatform.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +304,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0334DB0D23E02F1100EE0A13 /* Domain.framework in Frameworks */,
 				BD629755626273921D54CF08 /* Pods_NetworkPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,7 +776,6 @@
 				034205722269EABB0088A818 /* Sources */,
 				034205732269EABB0088A818 /* Frameworks */,
 				034205742269EABB0088A818 /* Resources */,
-				867884206041C31FBD998ABD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -793,6 +801,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0334DB0C23E02F0D00EE0A13 /* PBXTargetDependency */,
 			);
 			name = NetworkPlatform;
 			productName = NetworkPlatform;
@@ -807,7 +816,6 @@
 				034205B52269ED440088A818 /* Sources */,
 				034205B62269ED440088A818 /* Frameworks */,
 				034205B72269ED440088A818 /* Resources */,
-				CAD1883940B04A0A4DF3B5A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1008,70 +1016,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		867884206041C31FBD998ABD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9C09B53E56701E8BC89E0A72 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCoreLocation/RxCoreLocation.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Weather/Pods-Weather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreLocation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Weather/Pods-Weather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A789B8AEDC6917CDA98DD0EC /* [CP] Check Pods Manifest.lock */ = {
@@ -1094,36 +1053,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CAD1883940B04A0A4DF3B5A0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkPlatformTests/Pods-NetworkPlatformTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkPlatformTests/Pods-NetworkPlatformTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E292D9D7F5F8A59359DA3D1A /* [CP] Check Pods Manifest.lock */ = {
@@ -1294,6 +1223,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0334DB0C23E02F0D00EE0A13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0342056D2269EABB0088A818 /* Domain */;
+			targetProxy = 0334DB0B23E02F0D00EE0A13 /* PBXContainerItemProxy */;
+		};
 		034205462269E9340088A818 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0342052F2269E9310088A818 /* Weather */;
