@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "weather.jpg",
+      "filename" : "img_weather_background.png",
       "scale" : "1x"
     },
     {
