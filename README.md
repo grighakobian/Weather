@@ -1,7 +1,7 @@
 # 🌦 Weater
 ![](Resources/preview.png)
 
-This project was build by using [CleanArchitectureRxSwift](https://github.com/sergdort/CleanArchitectureRxSwift) approach and uses [OpenWeather](https://openweathermap.org/api) api.
+This project was build using [CleanArchitectureRxSwift](https://github.com/sergdort/CleanArchitectureRxSwift) and uses [OpenWeather](https://openweathermap.org/api) api.
 
 ## ⭐️ Features
 - Get weather forecast by current location.
